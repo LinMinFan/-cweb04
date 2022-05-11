@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "標楷體";
+        }
+
+        body {
+            background-image: url(../images/0402.jpg);
+        }
+
+        .content {
+            background-color: #FFFF99;
+            width: 800px;
+            height: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .content>* {
+            border: 1px solid #000000;
+        }
+
+        .p1 {
+            width: 400px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .p2 {
+            width: 400px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .p2>img {
+            height: 150px;
+            width: auto;
+        }
+
+        .p3 {
+            width: 400px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="" action="">
+    <div class="content">
+        <div class="p1">
+            真皮皮包
+        </div>
+        <div class="p1">
+            真皮短夾
+        </div>
+        <div class="p2">
+            <img src="../images/0403.jpg" alt="">
+        </div>
+        <div class="p2">
+            <img src="../images/0404.jpg" alt="">
+        </div>
+        <div class="p3">
+            <label>
+                <input type="radio" value="購買" name="r1" checked>
+                購買
+            </label>
+            <label>
+                <input type="radio" value="不購買" name="r1">
+                不購買
+            </label>
+            <label>
+                <input type="radio" value="考慮中" name="r1">
+                考慮中
+            </label>
+        </div>
+        <div class="p3">
+            <label>
+                <input type="radio" value="購買" name="r2">
+                購買
+            </label>
+            <label>
+                <input type="radio" value="不購買" name="r2">
+                不購買
+            </label>
+            <label>
+                <input type="radio" value="考慮中" name="r2" checked>
+                考慮中
+            </label>
+        </div>
+    </div>
+    <br>
+    <div class="submit">
+            <input style="margin-right: 10px;" type="submit" value="送出" onclick="confirm('流行皮件選購確認:'+'\r\r●真皮包包:'+form . r1 . value+'\r●真皮短夾:'+form . r2 . value)" >
+            <input style="margin-left: 10px;" type="reset" value="重置">
+        </div>
+    </form>
+</body>
+
+</html>
